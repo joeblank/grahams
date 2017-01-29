@@ -1,0 +1,10 @@
+<button type="button" name="button" ui-sref='home'>Return to list</button>
+
+<div class="">
+  <p>Name: {{ singleItem[0].item }}</p>
+  <p>Id: {{ singleItem[0].id }}</p>
+  <p>Price: {{ singleItem[0].price | currency }}</p>
+  <div class="image-wrapper">
+    <img ng-src="{{ singleItem[0].img }}" alt="image" class='image'>
+  </div>
+</div>

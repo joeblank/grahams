@@ -1,0 +1,9 @@
+<div class="" ng-repeat='item in foodData'>
+  <p>Name: {{ item.item }}</p>
+  <p>Id: {{ item.id }}</p>
+  <button
+  ui-sref='display({ id: item.id })' 
+  type="button"
+  name="button">Item Details</button>
+  <hr>
+</div>

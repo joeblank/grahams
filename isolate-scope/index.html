@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html ng-app='isolate-scope'>
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+  </head>
+  <body ng-controller='mainCtrl'>
+
+    <h1>Everything with a white background is directly on index.html</h1>
+    <p>$scope.first = {{ first }}</p>
+    <p>$scope.second = {{ second }}</p>
+    <p>type: <input ng-model='textFromInput' type="text" name="" style='border: 2px orange solid'></p>
+
+
+    <custom-directive
+    first-attribute='first'
+    second-attribute='second'
+    third-attribute='textFromInput'
+    random-string='coco pebbles are delicious'
+    func='redAlert(randomName)'
+    ></custom-directive>
+
+
+    <script src='https://ajax.googleapis.com/ajax/libs/angularjs/1.6.1/angular.js'></script>
+    <script src='./app.js'></script>
+    <script src='./mainCtrl.js'></script>
+    <script src='./directive.js'></script>
+
+  </body>
+</html>

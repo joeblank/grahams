@@ -1,0 +1,12 @@
+<div style='background: black; color: white'>
+  <h1>Everything within black background is the directive's template</h1>
+  <p>firstAttribute = {{ firstAttribute }}</p>
+  <p style='color: orange'>attributeTwo = {{ attributeTwo }}</p>
+  <p>twoWayBinding = {{ twoWayBinding }}</p>
+  <p style='color: pink'>random string = {{ randomString}}</p>
+  <h3>Type in the input box and click button to call the
+    <span style='color: red'>redAlert</span> function
+  that originated in the mainCtrl!</h3>
+  <p>Your name:<input ng-model='redAlertText' style='border: 1px solid red'></p>
+  <button type="button" name="button" ng-click='redAlert({ randomName: redAlertText })'>ALERT!</button>
+</div>
