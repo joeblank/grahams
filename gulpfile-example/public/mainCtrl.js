@@ -1,5 +1,5 @@
 angular.module('gulp-example')
-.controller('mainCtrl', function($scope) {
+.controller('mainCtrl', ($scope) => {
 
   $scope.data = mainService.getData();
 
