@@ -3,57 +3,59 @@ This repo is for the awesome DevMountaineers in DM-18 at DevMountain. It is a co
 
 NOTE: This is not at all a comprehensive list. This list doesn't even scratch the surface of what is available to you. This list is here to help expose you to what tech is out there.
 
+
 Be curious. Go explore. Build something awesome.
+
 
 
 FRAMEWORKS:
 
 1. Angular (Angular 2)
 
-  - A few differences between Angular (Angular 2) and AngularJS (Angular 1):
+- A few differences between Angular (Angular 2) and AngularJS (Angular 1):
 
-   -> Angular 2 recommends the use of Microsoft's TypeScript language, which is a superset of ES6.
-   -> Replacing controllers and $scope with components and directives.
-   -> Modularity
+     -> Angular 2 recommends the use of Microsoft's TypeScript language, which is a superset of ES6.
+     -> Replacing controllers and $scope with components and directives.
+     -> Modularity
 
-    a. https://angular.io/
+        a. https://angular.io/
 
 
 2. React (technically a library, but ya...)
 
-  - Javascript library created by Facebook
+- Javascript library created by Facebook
 
-   -> One way data flow
-   -> Use of JSX
-   -> Virtual DOM
+     -> One way data flow
+     -> Use of JSX
+     -> Virtual DOM
 
    SUGGESTION: Learn and use Redux with React -> http://redux.js.org/
 
       -> With Redux, the state of your whole application is stored in an object tree within a single store.
 
-    a. https://facebook.github.io/react/docs/hello-world.html
-    b. https://online.reacttraining.com/p/reactjsfundamentals
+        a. https://facebook.github.io/react/docs/hello-world.html
+        b. https://online.reacttraining.com/p/reactjsfundamentals
 
 
 3. Electron
 
   - If you can build a website, you can build a desktop app. Electron is a framework for creating native applications with web technologies like JavaScript, HTML, and CSS.
 
-    a. http://electron.atom.io/docs/
+        a. http://electron.atom.io/docs/
 
 
 4. Ionic    
 
   - Build mobile apps with Angular.
 
-    a. https://ionicframework.com/docs/
+        a. https://ionicframework.com/docs/
 
 
 5. React Native
 
   - Build mobile apps using Javascript and React.
 
-    a. https://facebook.github.io/react-native/
+        a. https://facebook.github.io/react-native/
 
 
 6. A-Frame
@@ -61,6 +63,8 @@ FRAMEWORKS:
   - Web framework for building virtual reality experiences.  
 
     a. https://aframe.io/  
+
+
 
 LIBRARIES / OTHER TECH:
 
@@ -70,11 +74,13 @@ LIBRARIES / OTHER TECH:
 
     a. https://d3js.org/
 
+
 2. jQuery UI
 
   - jQuery UI is a curated set of user interface interactions, effects, widgets, and themes built on top of the jQuery JavaScript Library.
 
     a. https://jqueryui.com/
+
 
 3. Amazon S3
 
@@ -84,23 +90,25 @@ LIBRARIES / OTHER TECH:
 
     a. https://aws.amazon.com/s3/
 
+
 4. ES6
 
   - Latest update to Javascript
 
-  a. http://es6katas.org/
-  b. http://es6-features.org/#Constants    
+      a. http://es6katas.org/
+      b. http://es6-features.org/#Constants    
 
 
 5. Unit testing
 
   - One possibility: Mocha and Chai
 
-   -> Mocha: JavaScript test framework for node.js and the browser.
-   -> Chai: assertion library for node and the browser that can be paired with any javascript testing framework (...maybe Mocha?)
+       -> Mocha: JavaScript test framework for node.js and the browser.
+       -> Chai: assertion library for node and the browser that can be paired with any javascript testing framework (...maybe Mocha?)
 
-   a. https://mochajs.org/
-   b. http://chaijs.com/
+           a. https://mochajs.org/
+           b. http://chaijs.com/
+
 
 6. Moment.js
 
@@ -124,6 +132,7 @@ LIBRARIES / OTHER TECH:
 
     a. http://sass-lang.com/
     b. http://lesscss.org/
+
 
 9. Chart.js
 
