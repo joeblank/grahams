@@ -1,8 +1,9 @@
+Angular review of:
+
 $stateParams
 
-directives
+$state.go
+
+custom directives
 
 isolate scope
-
-
-welcome/ login
