@@ -1,0 +1,29 @@
+Price to charge: <br>
+<input type="text" name="" ng-model='mockPrice' required>
+
+<form ng-submit='charge(payment)'>
+<section>
+  <div>Name on card:</div>
+  <input type="text" name="name" required>
+  <div >Card number:</div>
+  <input ng-model="payment.card.number" type="text" required>
+  <div>
+    <div>
+      <div>CVC:</div>
+      <input ng-model="payment.card.cvc" type="text" required>
+    </div>
+    <div>
+      <div>Exp. Mo</div>
+      <input ng-model="payment.card.exp_month" type="text" name="name" placeholder="MM">
+    </div>
+    <div>
+      <div>Exp. Yr</div>
+      <input ng-model="payment.card.exp_year" type="text" name="name" placeholder="YY">
+    </div>
+  </div>
+</section>
+
+<div>
+  <button type='sumbit' ng-click='passValues(userCart.order.user_id, userCart.order.id, schmotal)'>Confirm</button>
+</div>
+</form>
