@@ -1,18 +1,11 @@
 angular.module('stripe-app')
-.controller('mainCtrl', ($scope, stripe, $http) => {
+.controller('mainCtrl', ($scope, stripe, $http, $state) => {
 
 
 
 //==========STRIPE==================
-  $scope.passValues = (userId, orderId, schmotal) => {
-    $scope.stripeUserId = userId;
-    $scope.stripeOrderId = orderId;
-    $scope.stripeTotal = schmotal;
-  }
-
 
   $scope.payment = {};
-  $scope.payment.amount = 23;
 
   $scope.charge = function () {
     return stripe.card.createToken($scope.payment.card)
@@ -33,14 +26,16 @@ angular.module('stripe-app')
     })
     .then(function(payment) {
       console.log('successfully submitted payment for $', payment);
-
+      $state.go('congrats');
     })
     .catch(function (err) {
        if (err.type && /^Stripe/.test(err.type)) {
          console.log('Stripe error: ', err.message);
+         alert(err.message)
        }
        else {
          console.log('Other error occurred, possibly with your API', err.message);
+         alert(err.message)
        }
      });
  };

@@ -16,9 +16,9 @@ app.post('/api/payment', function(req, res, next){
   console.log(req.body);
 
   //convert amount to pennies
-  var chargeAmt = req.body.amount;
-  var amountArray = chargeAmt.toString().split('');
-  var pennies = [];
+  const chargeAmt = req.body.amount;
+  const amountArray = chargeAmt.toString().split('');
+  const pennies = [];
   for (var i = 0; i < amountArray.length; i++) {
     if(amountArray[i] === ".") {
       if (typeof amountArray[i + 1] === "string") {
@@ -40,11 +40,11 @@ app.post('/api/payment', function(req, res, next){
   console.log("Pennies: ");
   console.log(convertedAmt);
 
-  var charge = stripe.charges.create({
+  const charge = stripe.charges.create({
   amount: convertedAmt, // amount in cents, again
   currency: 'usd',
   source: req.body.payment.token,
-  description: 'Test charge for Joe B.'
+  description: 'Test charge from grahms repo'
 }, function(err, charge) {
      res.sendStatus(200);
   // if (err && err.type === 'StripeCardError') {

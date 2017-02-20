@@ -11,6 +11,10 @@ angular.module('stripe-app', ['ui.router', 'angular-stripe'])
     templateUrl: './home.html',
     controller: 'mainCtrl'
   })
+  .state('congrats', {
+    url: '/congrats',
+    templateUrl: './congrats.html'
+  })
 
 
 
