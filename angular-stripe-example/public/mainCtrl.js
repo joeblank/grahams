@@ -1,5 +1,15 @@
-angular.module('angular-stripe')
-.controller('mainCtrl', function($scope, mainService, stripe) {
+angular.module('stripe-app')
+.controller('mainCtrl', ($scope, stripe, $http) => {
+
+
+
+//==========STRIPE==================
+  $scope.passValues = (userId, orderId, schmotal) => {
+    $scope.stripeUserId = userId;
+    $scope.stripeOrderId = orderId;
+    $scope.stripeTotal = schmotal;
+  }
+
 
   $scope.payment = {};
   $scope.payment.amount = 23;
@@ -11,21 +21,19 @@ angular.module('angular-stripe')
       var payment = angular.copy($scope.payment);
       payment.card = void 0;
       payment.token = response.id;
-      // return $http.post('/api/payment', payment);
+
       return $http({
         method: 'POST',
         url: '/api/payment',
         data: {
-          amount: $scope.stripeTotal,
+          amount: $scope.mockPrice,
           payment: payment
         }
       })
     })
     .then(function(payment) {
       console.log('successfully submitted payment for $', payment);
-      alert('Thank you for your business!')
-      cartService.placeOrder($scope.stripeUserId, $scope.stripeOrderId).then((response) => {
-      })
+
     })
     .catch(function (err) {
        if (err.type && /^Stripe/.test(err.type)) {
@@ -38,4 +46,8 @@ angular.module('angular-stripe')
  };
 
 
+
+
+
+ //===END CTRL=======
 })

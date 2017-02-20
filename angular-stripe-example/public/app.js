@@ -1,7 +1,9 @@
-angular.module('angular-stripe', ['ui.router', 'angular-stripe'])
-.config(function($stateProvider, $urlRouterProvider, stripeProvider) {
+angular.module('stripe-app', ['ui.router', 'angular-stripe'])
+.config(($stateProvider, $urlRouterProvider, stripeProvider) => {
 
-  // stripeProvider.setPublishableKey('pk_test_kzb5s0W7xy3ki3oWuG1lR7Nd');
+  stripeProvider.setPublishableKey('pk_test_kzb5s0W7xy3ki3oWuG1lR7Nd');
+
+  $urlRouterProvider.otherwise('/')
 
   $stateProvider
   .state('home', {
@@ -9,9 +11,6 @@ angular.module('angular-stripe', ['ui.router', 'angular-stripe'])
     templateUrl: './home.html',
     controller: 'mainCtrl'
   })
-
-  $urlRouterProvider.otherwise('/')
-
 
 
 
