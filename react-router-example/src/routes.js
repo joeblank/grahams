@@ -12,7 +12,7 @@ function Nope() {
 }
 
 function handleEnter() {
-  return axios.get('http://localhost:3333/user/authed').then(response => {
+  return axios.get('http://localhost:3333/user/authed', {withCredentials: true}).then(response => {
     console.log(response);
   }, err => {console.log(err);})
 }

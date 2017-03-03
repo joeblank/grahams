@@ -4,12 +4,18 @@ const passport =  require('passport');
 const Auth0Strategy = require('passport-auth0');
 const config = require('./config');
 const cors = require('cors');
+const bodyParser = require('body-parser');
 
 const app = express();
 app.use(session({
-  secret: config.SECRET
+  secret: 'secretet',
+  cookie: {
+    secure: false,
+    httpOnly: false
+  }
 }));
 
+app.use(bodyParser.json())
 app.use(passport.initialize());
 app.use(passport.session());
 app.use(cors());
