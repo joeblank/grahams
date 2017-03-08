@@ -1,13 +1,23 @@
 import React, { Component } from 'react';
 
+
 export default class App extends Component {
+  constructor(props) {
+    super(props);
+    console.log('constructor');
+  }
+  componentWillMount() {
+    console.log('componentWillMount');
+  }
   render() {
+    console.log('render');
     return (
-      <div className="">
-        <a href='http://localhost:3333/auth'><button type="" className="">Login</button></a>
-        <div className="">app.js</div>
+      <div className="home-wrapper">
         {this.props.children}
       </div>
     )
+  }
+  componentDidMount() {
+    console.log('componentDidMount');
   }
 }

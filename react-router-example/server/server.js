@@ -8,7 +8,7 @@ const bodyParser = require('body-parser');
 
 const app = express();
 app.use(session({
-  secret: 'secretet',
+  secret: config.SECRET,
   cookie: {
     secure: false,
     httpOnly: false
@@ -57,7 +57,7 @@ passport.deserializeUser(function(obj, done) {
 app.get('/user/authed', (req, res, next) => {
   console.log(req.session);
   if (!req.user) {
-    return res.status(404).send('User not found')
+    return res.status(201).send('User not found')
   } else {
     return res.status(200).send(req.user)
   }
@@ -65,7 +65,6 @@ app.get('/user/authed', (req, res, next) => {
 
 
 
-const port = 3333;
-app.listen(port, () => {
-  console.log('listening to: ', port);
+app.listen(config.PORT, () => {
+  console.log('listening to: ', config.PORT);
 })
