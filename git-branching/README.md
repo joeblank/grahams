@@ -23,15 +23,15 @@ Once your branch is up-to-date with the master, push your code to your branch. G
 
 Example:
 
-git checkout master
-git pull
-git checkout <branch name>
-git merge master
-** fix merge conflicts, if any **
-git add .
-git commit -m 'fixed merge conflicts'
-git checkout master
-git pull
-git checkout <branch name>
-** code is now up-to-date with master branch **
-git push origin -u <branch name>
+git checkout master <br />
+git pull <br />
+git checkout <branch name> <br />
+git merge master <br />
+** fix merge conflicts, if any ** <br />
+git add . <br />
+git commit -m 'fixed merge conflicts' <br />
+git checkout master <br />
+git pull <br />
+git checkout <branch name> <br />
+** code is now up-to-date with master branch ** <br />
+git push origin -u <branch name> <br />
