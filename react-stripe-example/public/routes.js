@@ -6,7 +6,8 @@ import Congrats from './components/congrats';
 
 export default (
   <Route path='/' component={App}>
-    <Route path='/son' component={Congrats} />
+    <Route path='son' component={Congrats} />
+    <Route path='sona' component={Congrats} />
   </Route>
 
 )

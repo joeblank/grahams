@@ -8,6 +8,8 @@ export default class App extends Component {
         <a href='http://localhost:3333/auth'><button type="" className="">Login</button></a>
         <br/><br/>
         {this.props.children}
+        <br/><br/><br/><br/><br/>
+        <h1>Stripe</h1>
       </div>
     )
   }

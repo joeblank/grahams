@@ -12,6 +12,7 @@ app.use(session({
 app.use(passport.initialize());
 app.use(passport.session());
 
+
 passport.use(new Auth0Strategy({
   domain: config.auth0.domain,
   clientID: config.auth0.clientID,

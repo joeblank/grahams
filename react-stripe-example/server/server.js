@@ -47,8 +47,10 @@ app.get('/auth/me', (req, res, next) => {
   }
 })
 app.get('/isAuthed', (req,res) => {
-  console.log('haha worked');
-  return res.redirect(401, 'http://localhost:8080/')
+  console.log('hitting endpoint');
+  res.statusCode = 302;
+  res.setHeader("Location", 'http://localhost:8080');
+  res.end()
 })
 
 
