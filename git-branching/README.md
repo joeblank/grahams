@@ -1,6 +1,6 @@
 Creating a branch:
 
-git checkout -b <branch name>
+git checkout -b **branch name**
 
 What local branch am I currently working on?
 
@@ -8,11 +8,11 @@ git branch
 
 Switch from one branch to another:
 
-git checkout <branch name>
+git checkout <**branch name**
 
 Delete a local branch:
 
-git branch -d <branch name>
+git branch -d **branch name**
 
 While working in a group on a project, follow the process (a) at the beginning of each day,
 (b) any time a branch was merged to the master branch through a pull request:
@@ -32,6 +32,6 @@ git add . <br />
 git commit -m 'fixed merge conflicts' <br />
 git checkout master <br />
 git pull <br />
-git checkout <branch name> <br />
+git checkout **branch name** <br />
 ** code is now up-to-date with master branch ** <br />
-git push origin -u <branch name> <br />
+git push origin -u **branch name** <br />
