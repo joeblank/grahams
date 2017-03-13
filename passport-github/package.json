@@ -1,0 +1,19 @@
+{
+  "name": "passport-github",
+  "version": "1.0.0",
+  "description": "",
+  "main": "./server/server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Joe Blank",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "^1.17.1",
+    "cors": "^2.8.1",
+    "express": "^4.15.2",
+    "express-session": "^1.15.1",
+    "passport": "^0.3.2",
+    "passport-github2": "^0.1.10"
+  }
+}
