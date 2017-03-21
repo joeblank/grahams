@@ -1,0 +1,20 @@
+<div ng-controller='testCtrl'>
+
+
+
+
+NAME: {{theData.responseJSON[1][0]}}
+<br>
+DESC: {{theData.responseJSON[2][0]}}
+<br>
+LINK: {{theData.responseJSON[3][0]}}
+<div class="" ng-repeat='d in theData.responseJSON[1]'>
+{{ d }}
+</div>
+<div class="" ng-repeat='z in theData.responseJSON[2]'>
+{{ z }}
+</div>
+<div class="" ng-repeat='j in theData.responseJSON[3]'>
+{{ j }}
+</div>
+</div>
