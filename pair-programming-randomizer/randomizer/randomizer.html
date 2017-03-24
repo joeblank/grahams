@@ -1,3 +1,15 @@
-<h1>randomizerCtrl</h1>
+<h1 class='title'>Best O' Buds Machine!</h1>
 
-{{stu}}
+<section class='btn-wrap'>
+  <button type="button" name="button" ng-click='swap()' class='btn btn-default bu'>Swap</button>
+  <button type="button" name="button" ng-click='clear()' class='btn btn-default bu'>Clear</button>
+  <button type="button" name="button" ng-click='randomize()'
+  class='btn btn-danger bu'>Machine go boom</button>
+</section>
+
+<section class='pairs-wrap'>
+  <div ng-repeat='student in students' class='pair-container'>
+    <div class='student' ng-click='change(student[0], $index , 0)' ng-class='{highlight: highlightCheck(student[0])}'>{{student[0]}}</div>
+    <div class='student' ng-click='change(student[1], $index, 1)' ng-class='{highlight: highlightCheck(student[1])}'>{{student[1]}}</div>
+  </div>
+</section>

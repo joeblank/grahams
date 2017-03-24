@@ -30,8 +30,10 @@ angular.module('app')
 
   this.getDm21 = function() {
 
-    var arr = dm21.slice(0)
+    random = [];
     
+    var arr = dm21.slice(0)
+
     function randomNum() {
       return Math.floor( Math.random() * arr.length );
     }
