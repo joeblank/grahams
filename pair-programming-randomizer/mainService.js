@@ -1,10 +1,24 @@
 angular.module('app')
 .service('mainService', function() {
+  console.log('hey');
+      var store = function(name, data) {
+        console.log('running');
+        localStorage.setItem('joe', JSON.stringify(7));
+        console.log('saved');
+      };
+      store();
+      var get = function(name) {
+        var item = localStorage.getItem('joe');
+        console.log('got it', JSON.parse(item));
+      };
+      get();
+
+
 
   var dm21 = [
       'Samuel Brewer'
     ,  'Christopher Coburn'
-    ,  'Camden England'
+    ,  'Nick Celaya'
     ,  'Drew Larson'
     ,  'Andrew Nguyen'
     ,  'Harry Vu'
@@ -31,14 +45,16 @@ angular.module('app')
   this.getDm21 = function() {
 
     random = [];
-    
+
     var arr = dm21.slice(0)
+    console.log(arr, dm21);
 
     function randomNum() {
       return Math.floor( Math.random() * arr.length );
     }
 
-    for (var i = 0; i < arr.length; i++) {
+    for (var i = arr.length - 1; i > 0; i-=2) {
+      console.log('running', i);
       var newPair = [];
       var firstToAdd = randomNum();
       newPair.push(arr[firstToAdd]);
@@ -49,7 +65,6 @@ angular.module('app')
       arr.splice(secondToAdd, 1);
       random.push(newPair);
     }
-
     return random;
   }
 

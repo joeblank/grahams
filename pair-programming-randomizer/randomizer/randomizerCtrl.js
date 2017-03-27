@@ -31,6 +31,7 @@ angular.module('app')
   }
 
   $scope.highlightCheck = function(student) {
+    // console.log('highlight fn running', student);
     for (var prop in studentsToSwap) {
       if (studentsToSwap[prop].name === student) {
         return true;

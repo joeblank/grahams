@@ -1,0 +1,17 @@
+.home-wrap {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin-top: 100px;
+}
+.home-btn {
+  margin: 10px 0px;
+}
+
+.back-home {
+  position: fixed;
+  top: 20px;
+  right: 20px;
+}
