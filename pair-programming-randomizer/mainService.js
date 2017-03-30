@@ -39,6 +39,32 @@ angular.module('app')
     ,  'Jason Stickel'
     ,  'Cameron Walker'
   ];
+  var cohorts = {
+    dm21: [
+        'Samuel Brewer'
+      ,  'Christopher Coburn'
+      ,  'Nick Celaya'
+      ,  'Drew Larson'
+      ,  'Andrew Nguyen'
+      ,  'Harry Vu'
+      ,  'Kaliegh Niemala'
+      ,  'Wang Bhotia'
+      ,  'Jesse Boone'
+      ,  'Dominic Decicco'
+      ,  'Jake Headley'
+      ,  'Carlos Larios'
+      ,  'Ian Schoen'
+      ,  'Christopher Walker'
+      ,  'Andrew Chen'
+      ,  'John D\'Agostino'
+      ,  'Josh Harris'
+      ,  'Kevin Kim'
+      ,  'Zachary McClung'
+      ,  'Seth Rumbaugh'
+      ,  'Jason Stickel'
+      ,  'Cameron Walker'
+    ]
+  }
 
   var random = []
 
@@ -46,7 +72,7 @@ angular.module('app')
 
     random = [];
 
-    var arr = dm21.slice(0)
+    var arr = cohorts.dm21.slice(0)
     console.log(arr, dm21);
 
     function randomNum() {

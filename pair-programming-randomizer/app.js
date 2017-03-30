@@ -10,7 +10,7 @@ angular.module('app', ['ui.router'])
     controller: 'homeCtrl'
   })
   .state('randomizer', {
-    url: '/randomizer',
+    url: '/randomizer/:id',
     templateUrl: './randomizer/randomizer.html',
     controller: 'randomizerCtrl'
   })
