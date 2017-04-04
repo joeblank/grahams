@@ -1,0 +1,25 @@
+.details-wrap {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin-top: 125px;
+  font-family: "Oswald";
+  color: white;
+  font-size: 35px;
+}
+
+.deets {
+  margin: 20px 0px;
+}
+
+.button-wrap {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  margin-top: 75px;
+}
+
+button {
+  font-size: 15px;
+  border-radius: 5px;
+}

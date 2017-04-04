@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html ng-app='movies'>
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="./reset.css">
+    <link rel="stylesheet" href="./details/details.css">
+    <link rel="stylesheet" href="./home/home.css">
+    <title>DM-21Db</title>
+  </head>
+  <body>
+
+    <section class='body-bg'>
+      <section class="main-bg">
+        <section class='nav'>
+          <div class="home-title">DM21 IMDb</div>
+        </section>
+
+        <ui-view></ui-view>
+
+      </section>
+    </section>
+
+
+
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.3/angular.js" charset="utf-8"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/angular-ui-router/0.4.2/angular-ui-router.js" charset="utf-8"></script>
+    <script src="app.js" charset="utf-8"></script>
+    <script src="./home/homeCtrl.js" charset="utf-8"></script>
+    <script src="mainService.js" charset="utf-8"></script>
+    <script src="./details/detailsCtrl.js" charset="utf-8"></script>
+  </body>
+</html>

@@ -1,0 +1,22 @@
+<div class="details-wrap">
+  <div>
+    <img ng-src="{{singleMovie.img}}" alt="movie poster">
+  </div>
+  <div>
+    <div class="deets">
+      Title: {{ singleMovie.title }}
+    </div>
+    <div class="deets">
+      Year: {{ singleMovie.year }}
+    </div>
+    <div class="deets">
+      Rating: {{ singleMovie.rating }}
+    </div>
+    <div class="deets">
+      Gross: {{ singleMovie.gross | currency }}
+    </div>
+  </div>
+</div>
+<div class="button-wrap">
+  <button ui-sref='home' type="button" name="button">Check out other movies</button>
+</div>
