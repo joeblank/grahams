@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en" ng-app='app'>
+    <head>
+        <title></title>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+    </head>
+    <body ng-controller='mainCtrl'>
+    
+    <form class='form-horizontal col-sm-4' ng-submit='send(email)'>
+        <p>Send to:</p>
+        <input class="form-control " ng-model='email.to' ><br>
+        <p>Subject:</p>
+        <input class="form-control" ng-model='email.subject' > <br>
+        <p>Message:</p>
+        <textarea class="form-control" ng-model='email.body' ></textarea> <br>
+        <button class='btn btn-default' type="submit">Send Email</button>
+    </form>
+
+    <script src='https://ajax.googleapis.com/ajax/libs/angularjs/1.6.4/angular.js'></script>
+    <script src='./app.js'></script>
+    <script src='./mainCtrl.js'></script>
+    <script src='./mainService.js'></script>
+
+    </body>
+</html>
